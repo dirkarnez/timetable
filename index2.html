@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<div class="timetable">
+  <div class="time">Time</div>
+  <div class="monday">Monday</div>
+  <div class="tuesday">Tuesday</div>
+  <div class="wednesday">Wednesday</div>
+  <div class="thursday">Thursday</div>
+  <div class="friday">Friday</div>
+  <div class="saturday">Saturday</div>
+  <div class="sunday">Sunday</div>
+  <div class="cell time-slot" style="grid-area: 2 / 2 / 4 / 3; ">9:00 AM - 10:00 AM</div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell time-slot" style="grid-area: 3 / 3 / 5 / 4; ">10:00 AM - 11:00 AM</div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <!-- more time slots and cells here -->
+</div>
+
+<style>
+.timetable {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  grid-template-rows: 50px repeat(12, 1fr);
+  grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.time {
+  grid-row: 1 / span 13;
+  border-right: 1px solid black;
+}
+
+
+.cell {
+  border: 1px solid black;
+  min-height: 50px;
+}
+</style>
+
+</body>
+</html>
